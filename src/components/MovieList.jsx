@@ -9,7 +9,7 @@ const MovieList = () => {
     try {
       setMovieData("loading");
       const response = await fetch(
-        `http://www.omdbapi.com/?t=${title}&type=${filter}&apikey=469852b1`
+        `https://www.omdbapi.com/?t=${title}&type=${filter}&apikey=469852b1`
       );
       const data = await response.json();
       const movieDataArray = Object.keys(data)
